@@ -151,6 +151,7 @@
           </div>
 
           <div class="section-body">
+            @yield('content')
           </div>
         </section>
       </div>
