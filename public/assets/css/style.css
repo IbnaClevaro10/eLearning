@@ -609,7 +609,7 @@ select.form-control:not([size]):not([multiple]) {
   border: none;
   position: relative;
   margin-bottom: 30px; }
-  .card .card-header, .card .card-body, .card .card-footer {
+  .card .card-header, .card .card-body, .card-akses, .card .card-footer {
     background-color: transparent;
     padding: 20px 25px; }
   .card .navbar {
@@ -910,6 +910,70 @@ select.form-control:not([size]):not([multiple]) {
     height: 85px !important; }
   .card.card-hero .card-header {
     padding: 25px; } }
+
+    .profile-card {
+        background: linear-gradient(to bottom, #151a3b, rgba(182, 173, 173, 0.5)), url('https://via.placeholder.com/1920x1080');
+        background-size: cover;
+        color: white;
+        padding: 100px;
+        border-radius: 10px;
+    }
+    .profile-card .profile-picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid white;
+    }
+    .profile-card .profile-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .profile-card .edit-profile {
+        background-color: #17a2b8;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .profile-card .edit-profile:hover {
+        background-color: #138496;
+    }
+
+    .avatar-custom {
+        position: relative;
+        left: 70% !important;
+        bottom: 50px !important;
+    }
+
+    /* BUAT GURU */
+    .card-header {
+        position: relative;
+        padding: 0.5rem;
+    }
+
+    .badge-status {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 0.5rem;
+    }
+
+    .badge-active {
+        background-color: #4caf50; /* Hijau */
+    }
+
+    .badge-nonactive {
+        background-color: #ff5722; /* Merah */
+    }
+    /* END */
 /* 3.6 Table */
 .table td, .table:not(.table-bordered) th {
   border-top: none; }
@@ -1961,94 +2025,6 @@ body {
   font-weight: 400;
   font-family: 'Nunito', 'Segoe UI', arial;
   color: #6c757d; }
-
-  /* MAIN CONTENT */
-     /* Profile Section */
-     .profile-img {
-        border-radius: 50%;
-        border: 3px solid #007bff;
-    }
-    .profile-header {
-        border-bottom: 2px solid #f0f0f0;
-        background-color: cadetblue;
-        height: 300px;
-        width: 1263px;
-    }
-    .edit-profile {
-        font-size: 0.9rem;
-    }
-
-    /* Card-sakit Section */
-    .card {
-        border: none;
-        box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease-in-out;
-        margin-bottom: 50px;
-    }
-
-    .card:hover {
-        transform: scale(1.03);
-    }
-    .card h6 {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-    .card .btn {
-        font-size: 0.9rem;
-    }
-
-    .card-sakit {
-        border: none;
-        box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease-in-out;
-    }
-    .card-sakit:hover {
-        transform: scale(1.03);
-    }
-    .card-sakit h6 {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-    .card-sakit .btn {
-        font-size: 0.9rem;
-    }
-
-
-
-    /* Table Section */
-    table {
-        border-collapse: collapse;
-    }
-    table th, table td {
-        text-align: center;
-        vertical-align: middle;
-    }
-    .table-container {
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        border-radius: 8px;
-    }
-
-    /* Pagination */
-    .pagination .page-link {
-        color: #1461b4;
-    }
-    .pagination .page-link:hover {
-        background-color: #007bff;
-        color: white;
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-        .table-container {
-            padding: 10px;
-        }
-        .profile-img {
-            width: 70px;
-            height: 70px;
-        }
-    }
-  /* END */
 
 a.bb {
   text-decoration: none;

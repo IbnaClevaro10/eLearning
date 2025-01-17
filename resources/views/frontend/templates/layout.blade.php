@@ -139,7 +139,7 @@
               </ul>
             </li>
             <li class="menu-header">LMS</li>
-            <li class=active><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>E-Learning</span></a></li>
+            <li class=active><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Dashboard</span></a></li>
              </aside>
       </div>
 
