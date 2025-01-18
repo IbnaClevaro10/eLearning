@@ -11,3 +11,9 @@ Route::get('/siswa', function () {
 Route::get('/guru', function () {
     return view('frontend.guru.index');
 });
+Route::get('/buat_tugas', function () {
+    return view('frontend.guru.buat_tugas');
+});
+Route::get('/buat_soal', function () {
+    return view('frontend.guru.buat_soal');
+});

@@ -9,7 +9,7 @@
             <span>Ruang Mengajar</span>
         </div>
         <div class="col-auto">
-            <button class="btn btn-primary">+ Create</button>
+            <a href="buat_tugas"><button class="btn btn-primary">+ Create</button></a>
         </div>
     </div><br><br>
 
