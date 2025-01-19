@@ -139,7 +139,11 @@
               </ul>
             </li>
             <li class="menu-header">LMS</li>
+<<<<<<< HEAD
             <li class=active><a class="nav-link" href="blank.html"><i class="fas fa-square"></i> <span>E-Learning</span></a></li>
+=======
+            <li class=active><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Dashboard</span></a></li>
+>>>>>>> 1d7fc77c461214e9f296c1dcf4b21c3833fcaa40
              </aside>
       </div>
 
@@ -151,6 +155,7 @@
           </div>
 
           <div class="section-body">
+            @yield('content')
           </div>
         </section>
       </div>

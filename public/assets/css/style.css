@@ -2,14 +2,14 @@
 /**
  * Stisla
  *
- * Stisla is a clean & modern HTML5 admin template based on Bootstrap 4. 
+ * Stisla is a clean & modern HTML5 admin template based on Bootstrap 4.
  * Stisla will make it easier for you to create your own admin interface.
  *
- * @package	Stisla 
+ * @package	Stisla
  * @version	2.2.0
  * @author 	Muhamad Nauval Azhar
  * @url 	https://getstisla.com
- * 
+ *
  */
 /**
  * TABLE OF CONTENTS
@@ -609,7 +609,7 @@ select.form-control:not([size]):not([multiple]) {
   border: none;
   position: relative;
   margin-bottom: 30px; }
-  .card .card-header, .card .card-body, .card .card-footer {
+  .card .card-header, .card .card-body, .card-akses, .card .card-footer {
     background-color: transparent;
     padding: 20px 25px; }
   .card .navbar {
@@ -910,6 +910,70 @@ select.form-control:not([size]):not([multiple]) {
     height: 85px !important; }
   .card.card-hero .card-header {
     padding: 25px; } }
+
+    .profile-card {
+        background: linear-gradient(to bottom, #151a3b, rgba(182, 173, 173, 0.5)), url('https://via.placeholder.com/1920x1080');
+        background-size: cover;
+        color: white;
+        padding: 100px;
+        border-radius: 10px;
+    }
+    .profile-card .profile-picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid white;
+    }
+    .profile-card .profile-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .profile-card .edit-profile {
+        background-color: #17a2b8;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .profile-card .edit-profile:hover {
+        background-color: #138496;
+    }
+
+    .avatar-custom {
+        position: relative;
+        left: 70% !important;
+        bottom: 50px !important;
+    }
+
+    /* BUAT GURU */
+    .card-header {
+        position: relative;
+        padding: 0.5rem;
+    }
+
+    .badge-status {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 0.5rem;
+    }
+
+    .badge-active {
+        background-color: #4caf50; /* Hijau */
+    }
+
+    .badge-nonactive {
+        background-color: #ff5722; /* Merah */
+    }
+    /* END */
 /* 3.6 Table */
 .table td, .table:not(.table-bordered) th {
   border-top: none; }
@@ -1504,7 +1568,7 @@ h6 .badge {
   height: 65px;
   left: 250px;
   right: 5px;
-  position: absolute;
+  position: fixed;
   z-index: 890;
   background-color: transparent; }
   .navbar.active {
