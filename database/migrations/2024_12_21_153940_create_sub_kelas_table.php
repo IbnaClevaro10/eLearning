@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('sub_kelas', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('kelas_id');
+            $table->string('nama_sub');
             $table->timestamps();
         });
     }
