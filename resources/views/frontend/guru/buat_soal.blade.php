@@ -49,7 +49,7 @@
                   <label class="form-check-label" for="acakJawaban">Acak Jawaban</label>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Simpan Pengaturan</button>
+              <button type="button" class="btn">Simpan Pengaturan</button>
             </div>
 
             <!-- Preview Soal -->

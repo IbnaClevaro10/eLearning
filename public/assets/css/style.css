@@ -973,6 +973,20 @@ select.form-control:not([size]):not([multiple]) {
     .badge-nonactive {
         background-color: #ff5722; /* Merah */
     }
+
+    .preview-soal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+    }
+
+    .preview-soal img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
     /* END */
 /* 3.6 Table */
 .table td, .table:not(.table-bordered) th {
