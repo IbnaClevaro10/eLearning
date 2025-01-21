@@ -32,10 +32,13 @@ Route::get('/dashboard', function () {
     });
     Route::get('/buat_soal', function () {
         return view('frontend.guru.buat_soal');
-});
-Route::get('/multiple_choice', function () {
-    return view('frontend.guru.multiple_choice');
-});
-Route::get('/essay', function () {
-    return view('frontend.guru.essay');
-});
+    });
+    Route::get('/multiple_choice', function () {
+        return view('frontend.guru.multiple_choice');
+    });
+    Route::get('/essay', function () {
+        return view('frontend.guru.essay');
+    });
+    Route::get('/ujian', function () {
+        return view('frontend.siswa.ujian');
+    });

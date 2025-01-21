@@ -987,6 +987,13 @@ select.form-control:not([size]):not([multiple]) {
         width: 150px;
         margin-bottom: 10px;
     }
+    .status-done {
+        background-color: #20c997;
+        color: white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 0.8rem;
+    }
     /* END */
 /* 3.6 Table */
 .table td, .table:not(.table-bordered) th {

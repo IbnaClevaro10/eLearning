@@ -6,7 +6,7 @@
       <!-- Form Multiple Choice -->
       <div class="col-lg-4 col-md-12 mb-3">
           <div class="card">
-              <div class="card-body bg-light">
+              <div class="card-body bg-secondary">
                   <h5 class="card-title">Multiple Choice</h5>
                   <form>
                       <div class="mb-3">
