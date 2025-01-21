@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Blank Page &mdash; Stisla</title>
+  <title>Dashboard | </title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
@@ -20,7 +20,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-94034622-3');
 </script>
 <!-- /END GA --></head>
@@ -139,7 +138,10 @@
               </ul>
             </li>
             <li class="menu-header">LMS</li>
+
+            <li class=active><a class="nav-link" href="blank.html"><i class="fas fa-square"></i> <span>E-Learning</span></a></li>
             <li class=active><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Dashboard</span></a></li>
+
              </aside>
       </div>
 
@@ -149,7 +151,6 @@
           <div class="section-header">
             <h1>DASHBOARD</h1>
           </div>
-
           <div class="section-body">
             @yield('content')
           </div>
