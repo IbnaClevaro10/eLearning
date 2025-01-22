@@ -42,3 +42,6 @@ Route::get('/dashboard', function () {
     Route::get('/ujian', function () {
         return view('frontend.siswa.ujian');
     });
+    Route::get('/tes_ujian', function () {
+        return view('frontend.siswa.tes_ujian');
+    });
