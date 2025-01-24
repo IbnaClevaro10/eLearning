@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('opsi_soals', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('soal_id');
+            $table->string('opsi');
+            $table->integer('is_answer');
         });
     }
 

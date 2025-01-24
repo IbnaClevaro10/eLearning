@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('hasils', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('siswa_id');
+            $table->foreignId('tugas_id');
+            $table->integer('benar');
+            $table->integer('salah');
+            $table->integer('nilai');
             $table->timestamps();
         });
     }

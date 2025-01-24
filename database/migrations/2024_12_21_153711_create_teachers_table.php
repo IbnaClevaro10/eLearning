@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('teachers', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nama_guru');
+            $table->string('nuptk');
+            $table->string('username');
+            $table->string('password');
+            $table->foreignId('mapel_id');
+            $table->foreignId('tugas_id');
+            $table->foreignId('soal_id');
         });
     }
 
