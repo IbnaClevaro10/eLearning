@@ -1,6 +1,7 @@
 @extends('frontend.templates.layout')
 
 @section('content')
+<link rel="stylesheet" href="style.css">
 <div class="container mt-5">
     <h2>Input Kelas</h2>
 

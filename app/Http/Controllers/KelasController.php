@@ -34,7 +34,7 @@ class KelasController extends Controller
 
     public function update($id, Request $request) {
             Kelas::find($id)->update($request->all());
-            return redirect('frontend.admin.kelas.create')->with('success', 'Data Berhasil diupdate!');
+            return redirect()->route('kelas.edit')->with('success', 'Data Berhasil diupdate!');
     }
 
     public function delete($id) {

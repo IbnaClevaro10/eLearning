@@ -12,7 +12,7 @@
                 <div class="mt-4">
                 <a href="#" class="btn btn-outline-white btn-lg btn-icon icon-left"><i class="far fa-user"></i> Edit Profile</a>
                 <figure class="avatar avatar-custom mr-2 avatar-xl">
-                    <img src="assets/img/avatar/avatar-1.png" alt="...">
+                    <img src="/assets/img/avatar/avatar-1.png" alt="...">
                 </figure>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                 <div class="card shadow">
                 <div class="card-body text-left">
                     <h6 class="card-title">Input Sub Kelas</h6>
-                    <a href="/admin/kelas/create" class="btn btn-outline-primary">+ Buat Sub Kelas</a>
+                    <a href="admin/sub_kelas/create" class="btn btn-outline-primary">+ Buat Sub Kelas</a>
                 </div>
                 </div>
             </div>

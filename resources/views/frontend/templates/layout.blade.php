@@ -6,14 +6,14 @@
   <title>Dashboard | </title>
 
   <!-- General CSS Files -->
-  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="/assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/modules/fontawesome/css/all.min.css">
 
   <!-- CSS Libraries -->
 
   <!-- Template CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
 <!-- Start GA -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
 <script>
@@ -59,19 +59,19 @@
               </div>
               <div class="search-item">
                 <a href="#">
-                  <img class="mr-3 rounded" width="30" src="assets/img/products/product-3-50.png" alt="product">
+                  <img class="mr-3 rounded" width="30" src="/assets/img/products/product-3-50.png" alt="product">
                   oPhone S9 Limited Edition
                 </a>
               </div>
               <div class="search-item">
                 <a href="#">
-                  <img class="mr-3 rounded" width="30" src="assets/img/products/product-2-50.png" alt="product">
+                  <img class="mr-3 rounded" width="30" src="/assets/img/products/product-2-50.png" alt="product">
                   Drone X2 New Gen-7
                 </a>
               </div>
               <div class="search-item">
                 <a href="#">
-                  <img class="mr-3 rounded" width="30" src="assets/img/products/product-1-50.png" alt="product">
+                  <img class="mr-3 rounded" width="30" src="/assets/img/products/product-1-50.png" alt="product">
                   Headphone Blitz
                 </a>
               </div>
@@ -103,7 +103,7 @@
           <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg"><i class="far fa-bell"></i></a>
           </li>
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            <img alt="image" src="/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
             <div class="d-sm-none d-lg-inline-block">Hi, Muhammad Naufal Nurfikri
               <p>Student</p>
             </div></a>
@@ -122,11 +122,11 @@
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <img src="assets/img/logo.png" class="img-fluid mt-3">
+            <img src="/assets/img/logo.png" class="img-fluid mt-3">
             <a href="index.html">SMP NEGERI 2 CILEUNGSI</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html"><img src="assets/img/logo.png" class="img-fluid"></a>
+            <a href="index.html"><img src="/assets/img/logo.png" class="img-fluid"></a>
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header mt-3">Dashboard</li>
@@ -168,20 +168,20 @@
   </div>
 
   <!-- General JS Scripts -->
-  <script src="assets/modules/jquery.min.js"></script>
-  <script src="assets/modules/popper.js"></script>
-  <script src="assets/modules/tooltip.js"></script>
-  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
-  <script src="assets/modules/moment.min.js"></script>
-  <script src="assets/js/stisla.js"></script>
+  <script src="/assets/modules/jquery.min.js"></script>
+  <script src="/assets/modules/popper.js"></script>
+  <script src="/assets/modules/tooltip.js"></script>
+  <script src="/assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="/assets/modules/moment.min.js"></script>
+  <script src="/assets/js/stisla.js"></script>
 
   <!-- JS Libraies -->
 
   <!-- Page Specific JS File -->
 
   <!-- Template JS File -->
-  <script src="assets/js/scripts.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+  <script src="/assets/js/custom.js"></script>
 </body>
 </html>

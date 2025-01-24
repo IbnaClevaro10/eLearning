@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('sub_kelas', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('kelas_id');
+            $table->foreignId('kelas_id')->constrained('kelas')->onDelete('cascade'); // Relasi dengan tabel kelas
             $table->string('nama_sub');
             $table->timestamps();
         });
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sub-kelas');
+        //
     }
 };
