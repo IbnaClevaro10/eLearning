@@ -3,10 +3,46 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\SubKelasController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\StudentController;
 
-Route::get('/', function () {
-    return view('frontend.auth.login');
+
+// Login
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+    // Tambahkan route lain khusus untuk admin di sini
 });
+
+// Proteksi Route Dashboard Guru
+Route::middleware(['auth', 'guru'])->group(function () {
+    Route::get('/guru', [TeacherController::class, 'index'])->name('guru.index');
+    // Tambahkan route lain khusus untuk guru di sini
+});
+
+// Proteksi Route Dashboard Siswa
+Route::middleware(['auth', 'siswa'])->group(function () {
+    Route::get('/siswa', [StudentController::class, 'index'])->name('siswa.index');
+    // Tambahkan route lain khusus untuk siswa di sini
+});
+
+// Buat Akun Siswa & Guru
+// Tambah Akun Guru
+Route::get('/admin/guru/create', [AdminController::class, 'createGuru'])->name('admin.createGuru');
+Route::post('/admin/guru/store', [AdminController::class, 'storeGuru'])->name('admin.storeGuru');
+
+// Tambah Akun Siswa
+Route::get('/admin/siswa/create', [AdminController::class, 'createSiswa'])->name('admin.createSiswa');
+Route::post('/admin/siswa/store', [AdminController::class, 'storeSiswa'])->name('admin.storeSiswa');
+
+
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+
+
 Route::get('/dashboard', function () {
     return view('frontend.templates.layout');
 });
@@ -18,7 +54,7 @@ Route::get('admin/kelas/create', [KelasController::class, 'create'])->name('kela
 Route::POST('admin/store', [KelasController::class, 'store'])->name('kelas.store');
 // Edit Kelas
 Route::get('admin/kelas/{id}/edit', [KelasController::class, 'edit'])->name('kelas.edit');
-Route::get('admin/kelas/{id}/update', [KelasController::class, 'update'])->name('kelas.update');
+Route::post('admin/kelas/{id}/update', [KelasController::class, 'update'])->name('kelas.update');
 // Hapus Kelas
 Route::get('admin/kelas/{id}/delete', [KelasController::class, 'delete'])->name('kelas.hapus');
 

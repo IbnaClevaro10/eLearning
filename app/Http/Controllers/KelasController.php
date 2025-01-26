@@ -32,9 +32,9 @@ class KelasController extends Controller
         // dd($user);
     }
 
-    public function update($id, Request $request) {
+    public function update( Request $request, $id) {
             Kelas::find($id)->update($request->all());
-            return redirect()->route('kelas.edit')->with('success', 'Data Berhasil diupdate!');
+            return redirect()->route('kelas.create')->with('success', 'Data Berhasil diupdate!');
     }
 
     public function delete($id) {

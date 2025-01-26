@@ -39,7 +39,7 @@
                 <div class="card shadow">
                 <div class="card-body text-left">
                     <h6 class="card-title">Input Guru</h6>
-                    <button class="btn btn-outline-primary">+ Buat Akun Guru</button>
+                    <a href="admin/guru/create" class="btn btn-outline-primary">+ Buat Akun Guru</a>
                 </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 <div class="card shadow">
                 <div class="card-body text-left">
                     <h6 class="card-title">Input Siswa</h6>
-                    <button class="btn btn-primary">+ Buat Akun Siswa</button>
+                    <a href="admin/siswa/create" class="btn btn-primary">+ Buat Akun Siswa</a>
                 </div>
                 </div>
             </div>
