@@ -18,8 +18,7 @@ return new class extends Migration
             $table->string('username');
             $table->string('password');
             $table->foreignId('mapel_id');
-            $table->foreignId('tugas_id');
-            $table->foreignId('soal_id');
+            $table->timestamps();
         });
     }
 

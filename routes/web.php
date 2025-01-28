@@ -5,9 +5,11 @@ use App\Http\Controllers\KelasController;
 use App\Http\Controllers\SubKelasController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\MapelController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\StudentController;
-
+use App\Models\Student;
+use App\Models\Teacher;
 
 // Login
 Route::middleware(['auth', 'admin'])->group(function () {
@@ -29,13 +31,25 @@ Route::middleware(['auth', 'siswa'])->group(function () {
 
 // Buat Akun Siswa & Guru
 // Tambah Akun Guru
-Route::get('/admin/guru/create', [AdminController::class, 'createGuru'])->name('admin.createGuru');
-Route::post('/admin/guru/store', [AdminController::class, 'storeGuru'])->name('admin.storeGuru');
+Route::get('admin/guru/create', [TeacherController::class, 'create'])->name('guru.create');
+Route::post('admin/guru/store', [TeacherController::class, 'store'])->name('guru.store');
+Route::get('admin/guru/{id}/edit', [TeacherController::class, 'edit'])->name('guru.edit');
+Route::get('admin/guru/{id}/update', [TeacherController::class, 'update'])->name('guru.update');
+// Hapus
+Route::get('admin/guru/{id}/delete', [TeacherController::class, 'delete'])->name('guru.delete');
 
 // Tambah Akun Siswa
-Route::get('/admin/siswa/create', [AdminController::class, 'createSiswa'])->name('admin.createSiswa');
-Route::post('/admin/siswa/store', [AdminController::class, 'storeSiswa'])->name('admin.storeSiswa');
+Route::get('/admin/siswa/create', [StudentController::class, 'create'])->name('siswa.create');
+Route::post('/admin/siswa/store', [StudentController::class, 'store'])->name('siswa.store');
 
+// Tambah Mapel
+Route::get('admin/mapel/create', [MapelController::class, 'create'])->name('mapel.create');
+Route::POST('admin/mapel/store', [MapelController::class, 'store'])->name('mapel.store');
+// Edit Mapel
+Route::get('admin/mapel/{id}/edit', [MapelController::class, 'edit'])->name('mapel.edit');
+Route::post('admin/mapel/{id}/update', [MapelController::class, 'update'])->name('mapel.update');
+// Hapus Mapel
+Route::get('admin/mapel/{id}/delete', [MapelController::class, 'delete'])->name('mapel.hapus');
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);

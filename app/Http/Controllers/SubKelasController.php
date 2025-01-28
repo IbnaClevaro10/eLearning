@@ -11,7 +11,7 @@ class SubKelasController extends Controller
     // Menampilkan form untuk membuat sub_kelas
     public function create()
     {
-        $kelas = Kelas::all(); // Ambil data kelas untuk dropdown
+        $kelas = Kelas::all(); 
         $sub_kelas = Sub_Kelas::with('kelas')->get();
         return view('frontend.admin.subkelas.create', compact('kelas', 'sub_kelas'));
     }

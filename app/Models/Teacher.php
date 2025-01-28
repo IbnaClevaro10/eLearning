@@ -2,9 +2,15 @@
 
 namespace App\Models;
 
+use App\Models\Mapel;
 use Illuminate\Database\Eloquent\Model;
 
 class Teacher extends Model
 {
-  protected $fillable = ['nama_guru', 'nuptk', 'username', 'password', 'mapel_id', 'tugas_id', 'soal_id'];
+    protected $table = 'teachers';
+  protected $fillable = ['nama_guru', 'nuptk', 'username', 'password', 'mapel_id'];
+  public function mapel()
+  {
+      return $this->belongsTo(Mapel::class, 'mapel_id', 'id');
+  }
 }

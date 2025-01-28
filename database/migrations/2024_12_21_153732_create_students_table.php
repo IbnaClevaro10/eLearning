@@ -16,9 +16,10 @@ return new class extends Migration
             $table->string('nama_siswa');
             $table->string('nis');
             $table->string('username');
-            $table->integer('password');
+            $table->string('password');
             $table->string('kelas_id');
-            $table->foreignId('subkel_id');
+            $table->foreignId('sub_kelas_id');
+            $table->timestamps();
         });
     }
 

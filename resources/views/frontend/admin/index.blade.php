@@ -31,7 +31,7 @@
                 <div class="card shadow">
                 <div class="card-body text-left">
                     <h6 class="card-title">Input Sub Kelas</h6>
-                    <a href="admin/sub_kelas/create" class="btn btn-outline-primary">+ Buat Sub Kelas</a>
+                    <a href="/admin/sub_kelas/create" class="btn btn-outline-primary">+ Buat Sub Kelas</a>
                 </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                 <div class="card shadow">
                 <div class="card-body text-left">
                     <h6 class="card-title">Input Guru</h6>
-                    <a href="admin/guru/create" class="btn btn-outline-primary">+ Buat Akun Guru</a>
+                    <a href="/admin/guru/create" class="btn btn-outline-primary">+ Buat Akun Guru</a>
                 </div>
                 </div>
             </div>
@@ -47,7 +47,15 @@
                 <div class="card shadow">
                 <div class="card-body text-left">
                     <h6 class="card-title">Input Siswa</h6>
-                    <a href="admin/siswa/create" class="btn btn-primary">+ Buat Akun Siswa</a>
+                    <a href="/admin/siswa/create" class="btn btn-primary">+ Buat Akun Siswa</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card shadow">
+                <div class="card-body text-left">
+                    <h6 class="card-title">Input Mata Pelajaran</h6>
+                    <a href="/admin/mapel/create" class="btn btn-primary">+ Buat Mapel</a>
                 </div>
                 </div>
             </div>

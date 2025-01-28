@@ -11,17 +11,14 @@ class MapelController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        //
-    }
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        //
+        $mapel = Mapel::all();
+        return view('frontend.admin.mapel.create', compact('mapel'));
     }
 
     /**
@@ -29,38 +26,30 @@ class MapelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $mapel = new Mapel();
+        $mapel->nama_mapel = $request->input('nama_mapel');
+        $mapel->save();
+        return redirect()->route('mapel.create');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Mapel $mapel)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Mapel $mapel)
-    {
-        //
+    public function edit($id) {
+        // Edit Data Berdasarkan Id
+        $mapel = Mapel::find($id);
+        return view('frontend.admin.mapel.edit', compact('mapel'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Mapel $mapel)
-    {
-        //
+    public function update( Request $request, $id) {
+            Mapel::find($id)->update($request->all());
+            return redirect()->route('mapel.create')->with('success', 'Data Berhasil diupdate!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Mapel $mapel)
-    {
-        //
+    public function delete($id) {
+        // Hapus data berdasarkan id
+        Mapel::find($id)->delete();
+        return back()->with('success', 'Data Berhasil Dihapus!');
     }
 }
